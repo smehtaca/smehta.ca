@@ -1,54 +1,61 @@
-baseURL                     = "https://smehta.ca/"                      # Your domain name. Must end with "/"
-languageCode                = "en-us"                                   # languageCode
-title                       = "Sameer Mehta"                            # Site title
-theme                       = "introduction"
-pygmentsStyle               = "monokai"                                 # https://help.farbox.com/pygments.html
-pygmentsCodefences          = true
-enforce_ssl                 = false
-# disqusshortname           = ""                                        # Enable Disqus for comments https://gohugo.io/content-management/comments
-# googleAnalytics           = ""                                        # Enable Google Analytics https://gohugo.io/templates/internal/#google-analytics
+## Basic Configuration
 
+baseurl = "https://smehta.ca" 
+builddrafts = true
+canonifyurls = true
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Sameer Mehta"
+title = "Sameer Mehta"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+googleAnalytics = "UA-111641015-2"
+enableRobotsTXT = true
+
+## Site Settings
 [params]
-    firstName               = "Sameer"                                  # First name shows in introduction on main page
-    lastName                = "Mehta"                                   # Last name
-    tagLine                 = "I'm a Product Driven Software Engineer"  # Appears after the introduction
-    introHeight             = "large"                                   # Input either 'medium' or 'large' or 'fullheight'
-    themeStyle              = "light"                                   # Choose 'light' or 'dark'
-    avatar                  = "img/Sameer.png"                          # Path to image in static folder eg. img/avatar.png, or comment out to remove
-    email                   = "sameer@smehta.ca"                        # Shows in contact section, or leave blank to omit
-    localTime               = true                                      # Show your current local time in contact section
-    timeZone                = "America/Toronto"                         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    dateForm                = "Jan 2, 2006"
-    dateFormFull            = "Mon Jan 2 2006 15:04:05 EST"
-    cacheBuster             = false                                     # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    description             = "Website Description"                     # Max 160 characters show in search results
-    faviconFile             = "img/favicon.ico"
-    footerText              = ""                                        # Text to override default footer text (markdown allowed)
-    fadeIn                  = true                                      # Turn on/off the fade-in effect
-    customCSS               = []                                        # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
+author = "Sameer Mehta"
+intro = "Product Driven Software Engineer"
+description = "Interested in Fintech, Data Driven Design, and a whole lot more!"
+authorimage = "Sameer.png"
+dateformat = "Jan 2, 2006"
 
-    showBlog                = true                                      # Show Blog section on home page
-    showAllPosts            = false                                     # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-    showLatest              = true                                      # Show latest blog post summary
-    # Share buttons on blog post pages
-    shareButtons            = true                                      # Show "Share this:" social buttons
-    shareTwitter            = true
-    shareFacebook           = true
-    sharePinterest          = false
-    shareGooglePlus         = true
-    
-    showProjects            = false                                     # Show Projects section on home page
-    numberOfProjectsToShow  = 3                                         # Maximum number of projects to show on home page. Unset or comment out to show all projects.
-    placeHolderimg          = "/img/project.png"                        # For Projects without image
+## Site Meta Settings
+[params.meta]
+description = "Sameer Mehta Software Engineer"
+keywords = "software,blog,fintech,go,dgraph,graphql,apollo,react,microservices,developer,software engineer"
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
+## Social Accounts
+[params.social]
+github = "smehtaca"
+linkedin = "smehtaca"
+email = "sameer@smehta.ca"
 
-[[params.social]]
-    url  = "https://angel.co/smehtaca"
-    icon = "angellist"
+## Extras
+[params.extra]
+copyright = "© 2018. Sameer Mehta." 
+poweredby = true
+highlightjs = true
 
-[[params.social]]
-    url  = "https://linkedin.com/in/smehtaca"
-    icon = "linkedin"
-
+## Main Menu
+[[menu.main]]
+    name = "about"
+    weight = 100
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "projects"
+    identifier = "projects"
+    weight = 200
+    url = "/projects/"
+[[menu.main]]
+    name = "blog"
+    identifier = "blog"
+    weight = 300
+    url = "/blog/"
