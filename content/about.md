@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2018-08-11T23:14:42-04:00
+? date
 draft: true
 ---
 
