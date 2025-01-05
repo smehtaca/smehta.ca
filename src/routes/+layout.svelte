@@ -1,7 +1,7 @@
 <script>
 	import '../tailwind.css';
 	import Nav from '../components/Nav.svelte';
-	import { MY_TWITTER_HANDLE, MY_YOUTUBE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
+	import { REPO_URL, SITE_TITLE } from '$lib/siteConfig';
 </script>
 
 <svelte:head>
@@ -36,25 +36,9 @@
 				class="text-gray-500 transition hover:text-gray-300"
 				target="_blank"
 				rel="noopener noreferrer"
-				href={'https://twitter.com/intent/follow?screen_name=' + MY_TWITTER_HANDLE}
-			>
-				Twitter
-			</a>
-			<a
-				class="text-gray-500 transition hover:text-gray-300"
-				target="_blank"
-				rel="noopener noreferrer"
 				href={REPO_URL}
 			>
 				GitHub
-			</a>
-			<a
-				class="text-gray-500 transition hover:text-gray-300"
-				target="_blank"
-				rel="noopener noreferrer"
-				href={MY_YOUTUBE}
-			>
-				YouTube
 			</a>
 		</div>
 	</div>
