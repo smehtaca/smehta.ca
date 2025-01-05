@@ -1,14 +1,19 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, build with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
 .DS_Store
+node_modules
+/.svelte-kit
+/package
+/build
+/functions
+/static/tailwind.css
+/src/lib/sampledata.json
+.env
+.env.*
+!.env.example
+.vercel
+.output
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Local Netlify folder
+.netlify
+.histoire
