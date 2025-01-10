@@ -17,7 +17,7 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.0.8",
-		"@histoire/plugin-svelte": "^0.17.6",
+		"@histoire/plugin-svelte": "^0.17.17",
 		"@playwright/test": "^1.40.1",
 		"@svelte-put/toc": "^4.0.0",
 		"@sveltejs/adapter-auto": "^2.1.1",
